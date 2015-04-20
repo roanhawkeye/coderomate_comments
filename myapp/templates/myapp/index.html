@@ -8,7 +8,7 @@
   <div class="col-md-8 col-md-offset-2">
     <h1> Comments Index </h1>
     <ol>
-        {% for comment in object_list %}
+        {% for comment in Comments_list %}
             <li class="well" >{{ comment.body }}</li>
         {% empty %}
         <div class="container center">

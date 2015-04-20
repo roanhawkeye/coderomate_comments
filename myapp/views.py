@@ -7,6 +7,7 @@ from myapp.models import Comment
 class IndexView(generic.ListView):
     template_name = 'myapp/index.html'
     model = Comment
+    context_object_name = "Comments_list"
 
 
 class LoginFormView(generic.TemplateView):
@@ -16,3 +17,4 @@ class LoginFormView(generic.TemplateView):
 class CommentCreateView(generic.CreateView):
     template_name = 'myapp/create_comment.html'
     form_class = forms.CommentCreateForm
+    success_url = "/"
