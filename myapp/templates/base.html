@@ -8,11 +8,16 @@
         <title>{% block title %}My App Example{% endblock %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'myapp/css/bootstrap-theme.min.css' %}">
         {% block extra-head-tags %}{% endblock %}
     </head>
     <body>
-    <h1>Hola my Project View</h1>
+
     {% block content %} {% endblock %}
+
+    <script src="{% static 'myapp/js/vendor/jquery.min.js' %}"></script>
+    <script src="{% static 'myapp/js/vendor/bootstrap.min.js' %}"></script>
     {% block extra-script-tags %} {% endblock %}
     </body>
 </html>
