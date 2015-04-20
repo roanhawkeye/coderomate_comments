@@ -17,3 +17,6 @@ class Comment(models.Model):
     )
 
     ranking = models.IntegerField(choices=RANKING_CHOICES, default=1)
+
+    def __str__(self):
+        return "Comentario: " + self.body

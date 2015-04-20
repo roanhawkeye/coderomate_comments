@@ -10,3 +10,9 @@ class CommentCreateForm(forms.ModelForm):
         fields = [
             'body', 'is_inappropriate', 'ranking'
         ]
+
+    def save(self, commit=True):
+        comment = super(CommentCreateForm, self).save(commit=False)
+        if commit:
+            comment.save()
+        return comment
