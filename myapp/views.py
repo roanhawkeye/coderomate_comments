@@ -7,6 +7,7 @@ class IndexView(generic.TemplateView):
     template_name = 'myapp/index.html'
 
 
+
 class LoginFormView(generic.TemplateView):
     template_name = 'myapp/login.html'
 

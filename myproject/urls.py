@@ -2,6 +2,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^myapp/', include('myapp.urls', namespace="myapp")),
+    url(r'^', include('myapp.urls', namespace="myapp")),
     url(r'^admin/', include(admin.site.urls)),
 ]
