@@ -1,11 +1,12 @@
 from django.views import generic
 
 from myapp import forms
+from myapp.models import Comment
 
 
-class IndexView(generic.TemplateView):
+class IndexView(generic.ListView):
     template_name = 'myapp/index.html'
-
+    model = Comment
 
 
 class LoginFormView(generic.TemplateView):
