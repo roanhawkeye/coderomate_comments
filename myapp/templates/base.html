@@ -1,0 +1,18 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}My App Example{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block extra-head-tags %}{% endblock %}
+    </head>
+    <body>
+    <h1>Hola my Project View</h1>
+    {% block content %} {% endblock %}
+    {% block extra-script-tags %} {% endblock %}
+    </body>
+</html>
