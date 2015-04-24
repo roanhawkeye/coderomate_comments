@@ -18,3 +18,9 @@ class CommentCreateView(generic.CreateView):
     template_name = 'myapp/create_comment.html'
     form_class = forms.CommentCreateForm
     success_url = "/"
+
+
+class CommentUpdateView(generic.CreateView):
+    template_name = 'myapp/update_comment.html'
+    form_class = forms.CommentUpdateForm
+    success_url = "/"
